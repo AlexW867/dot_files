@@ -65,7 +65,7 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/powerline'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'godlygeek/tabular'
 filetype on
@@ -88,3 +88,4 @@ endif
 
 let mapleader = "\\"
 let g:mapleader = "\\"
+set rtp+=${HOME}/.vim/bundle/powerline/powerline/bindings/vim

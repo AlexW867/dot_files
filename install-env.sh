@@ -1,10 +1,8 @@
 #!/bin/sh
 #
 GITDIR=`pwd`
-# 先把oh-my-zsh抓回來
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-#
-mkdir -p $HOME/.oh-my-zsh/custom/plugins && cd $HOME/.oh-my-zsh/custom/plugins && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
+# 先把submodule拉回來
+git submodule init && git submodule update --recursive
 #
 cd $HOME
 #
@@ -40,4 +38,18 @@ fi
 
 ln -s $GITDIR/gitconfig $HOME/.gitconfig
 #
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+if [ -e $HOME/.oh-my-zsh ]; then
+    mv $HOME/.oh-my-zsh $HOME/.oh-my-zsh.bak
+fi
+ln -s $GITDIR/modules/oh-my-zsh $HOME/.oh-my-zsh
+
+if [ -e $HOME/.tmux.conf.source ]; then
+    rm -f $HOME/.tmux.conf.source
+fi
+cat >> $HOME/.tmux.conf.source << EOF
+source "$GITDIR/modules/powerline/powerline/bindings/tmux/powerline.conf"
+EOF
+
+cat >> $HOME/.zshrc.source << EOF
+source "$GITDIR/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+EOF
