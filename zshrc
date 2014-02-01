@@ -19,13 +19,17 @@ path=($path $PATHDIRS)
 alias c="clear"
 alias cd..="cd .."
 alias cd...="cd ../.."
-alias cls="clear"
+#alias cls="clear"
 alias g="grep --color=auto"
 alias ssh="ssh -4 -C -e none"
 alias vi="vim"
 alias tmux="tmux -2"
 alias ta="tmux attach"
-alias yh="ypcat hosts"
+#alias yh="ypcat hosts"
+#alexw
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
 
 # 環境變數
 export EDITOR VISUAL HOME
