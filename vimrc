@@ -24,7 +24,7 @@ set t_Co=256
 set visualbell
 set wildmenu
 set tabstop=4
-set guifont=Source\ Code\ Pro\ ExtraLight
+set guifont=Sauce\ Code\ Powerline\ ExtraLight
 syntax on
 "
 " keybinding
@@ -68,6 +68,8 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/powerline'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'godlygeek/tabular'
+Bundle 'Shougo/neocomplete.vim'
+
 filetype on
 "
 " color schema
@@ -89,3 +91,5 @@ endif
 let mapleader = "\\"
 let g:mapleader = "\\"
 set rtp+=${HOME}/.vim/bundle/powerline/powerline/bindings/vim
+
+let g:neocomplete#enable_at_startup = 1
