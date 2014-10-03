@@ -31,5 +31,7 @@ dot_files
 
 		: BundleInstall
 6. 如果vi出錯AttributeError: 'VimPowerline' object has no attribute 'setup'
+
         砍了pip的powerline
+       
         sudo pip uninstall powerline
