@@ -41,7 +41,7 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export PATH="/usr/local/sbin:/usr/sbin:/sbin:/sbin:/bin:/usr/sbin:/usr/local/bin:/usr/bin:/usr/games:/usr/local/sbin:/home/alexw/bin:$PATH"
 export PERL_CPANM_OPT="--mirror http://cpan.nctu.edu.tw/ --mirror http://cpan.cpantesters.org/"
-export TERM=xterm-256color
+export TERM=screen-256color
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
@@ -64,9 +64,11 @@ DISABLE_AUTO_TITLE=true
 
 source "$HOME/.zshrc.source"
 
-source ~/.zsh-autosuggestions/autosuggestions.zsh
-zle-line-init() {
-    zle autosuggest-start
-}
-zle -N zle-line-init
-bindkey '^T' autosuggest-toggle
+# Disable zsh-autosuggestions
+#
+#source ~/.zsh-autosuggestions/autosuggestions.zsh
+#zle-line-init() {
+#    zle autosuggest-start
+#}
+#zle -N zle-line-init
+#bindkey '^T' autosuggest-toggle

@@ -5,3 +5,5 @@
 [user]
 	name = AlexW
 	email = yen867@gmail.com
+[push]
+	default = matching
