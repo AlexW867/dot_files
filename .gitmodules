@@ -1,9 +1,6 @@
 [submodule "vim/bundle/vundle"]
     path = vim/bundle/vundle
     url = https://github.com/gmarik/vundle.git
-[submodule "modules/powerline"]
-    path = modules/powerline
-    url = https://github.com/Lokaltog/powerline.git
 [submodule "modules/oh-my-zsh"]
     path = modules/oh-my-zsh
     url = https://github.com/robbyrussell/oh-my-zsh.git
@@ -14,3 +11,6 @@
 [submodule "modules/zsh-autosuggestions"]
 	path = modules/zsh-autosuggestions
 	url = https://github.com/tarruda/zsh-autosuggestions
+[submodule "modules/powerline"]
+	path = modules/powerline
+	url = https://github.com/powerline/powerline.git
