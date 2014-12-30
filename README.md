@@ -13,6 +13,7 @@ dot_files
 * vim (with Python support)
 * zsh
 * patch過的字型（沒patch過的沒有powerline使用的特殊符號）
+* python module: psutil
 
 #### 流程
 1. 把repository clone回去
