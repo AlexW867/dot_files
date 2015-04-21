@@ -6,6 +6,7 @@ cd "$HOME"
 
 # 設定$PATH
 PATHDIRS=(
+    ~/.composer/vendor/bin
     /opt/local/bin
     /opt/local/sbin
     /usr/local/sbin
