@@ -24,7 +24,7 @@ set t_Co=256
 set visualbell
 set wildmenu
 set tabstop=4
-set guifont=Sauce\ Code\ Powerline\ ExtraLight
+set guifont=Sauce\ Code\ Powerline\ ExtraLight:h13
 syntax on
 "
 " keybinding
@@ -64,11 +64,14 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/powerline'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'godlygeek/tabular'
-"Bundle 'Shougo/neocomplete.vim'
+Plugin 'gmarik/vundle'
+Plugin 'Lokaltog/powerline'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'godlygeek/tabular'
+Plugin 'mattn/emmet-vim'
+Plugin 'hdima/python-syntax'
+"Plugin 'Shougo/neocomplete.vim'
+" use PluginInstall to install
 filetype on
 "
 " color schema

@@ -1,5 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="gallifrey"
+ZSH_THEME="dpoggi"
 plugins=(cp git zsh-syntax-highlighting)
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 cd "$HOME"
