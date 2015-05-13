@@ -54,7 +54,8 @@ au BufNewFile,BufRead *.psgi setf perl
 au BufNewFile,BufRead *.json setf json
 au BufNewFile,BufRead Makefile set noexpandtab
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
-"
+" twig using django
+au BufNewFile,BufRead *.twig set filetype=htmldjango
 
 set nocompatible               " be iMproved
 filetype off                   " required!
