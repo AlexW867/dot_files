@@ -3,7 +3,7 @@ dot_files
 
 我的zsh + vim + tmux 等等等的環境設定
 
-![Imgur](http://i.imgur.com/tkkcicl.png)
+![Imgur](http://i.imgur.com/5mM1HNb.png)
 
 ## Prerequirement
 
