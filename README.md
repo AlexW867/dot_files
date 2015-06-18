@@ -45,11 +45,13 @@ dot_files
 * 沒有右側時間列
  檢查一下 /usr/local/bin/powerline 是否為 
 
-     __requires__ = 'powerline == beta'
+     __ requires __ = 'powerline == beta'
 
  是的話整個檔案砍了,(也不知道是哪來的)
  然後去 module/powerline
 
     git pull original master
+
     git checkout develop
+
     sudo python setup.py install
