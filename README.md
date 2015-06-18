@@ -50,7 +50,7 @@ dot_files
  是的話整個檔案砍了,(也不知道是哪來的)
  然後去 module/powerline
 
-        git pull original master
+        git pull origin master
 
         git checkout develop
 
