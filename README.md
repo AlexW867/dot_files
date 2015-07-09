@@ -3,14 +3,14 @@ dot_files
 
 我的zsh + vim + tmux 等等等的環境設定
 
-![Imgur](http://i.imgur.com/tkkcicl.png)
+![Imgur](http://i.imgur.com/5mM1HNb.png)
 
 ## Prerequirement
 
 * zsh
 * vim (with Python support)
 * patch 過的字型（沒patch過的沒有powerline使用的特殊符號）
-* python module: psutil
+* python module: psutil (pip install psutil)
 
 #### Installation
 
@@ -41,5 +41,17 @@ dot_files
     砍了 pip 的 powerline
     
         sudo pip uninstall powerline
-        
 
+* 沒有右側時間列
+ 檢查一下 /usr/local/bin/powerline 是否為 
+
+     __ requires __ = 'powerline == beta'
+
+ 是的話整個檔案砍了,(也不知道是哪來的)
+ 然後去 module/powerline
+
+        git pull origin master
+
+        git checkout develop
+
+        sudo python setup.py install
