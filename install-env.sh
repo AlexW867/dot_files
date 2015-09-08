@@ -52,6 +52,12 @@ if [ -e $HOME/.zsh-autosuggestions ]; then
 fi
 ln -s $GITDIR/modules/zsh-autosuggestions $HOME/.zsh-autosuggestions
 
+if [ -e $HOME/.tmux.conf.source ]; then
+    rm -fr $HOME/.tmux.conf.source
+fi
+ln -s $GITDIR/tmux.conf.source $HOME/.tmux.conf.source
+ln -s $GITDIR/tmux.conf.source.osx $HOME/.tmux.conf.source.osx
+
 cat >> $HOME/.tmux.conf.source << EOF
 source "$GITDIR/modules/powerline/powerline/bindings/tmux/powerline.conf"
 EOF

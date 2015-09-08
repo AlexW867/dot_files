@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="dallas"
-plugins=(cp git zsh-syntax-highlighting)
+plugins=(cp git zsh-syntax-highlighting docker)
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 cd "$HOME"
 
@@ -81,3 +81,6 @@ export LESS_TERMCAP_me=$'\E[0m'
 export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[04;38;5;111m'
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
