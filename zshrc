@@ -67,11 +67,12 @@ source "$HOME/.zshrc.source"
 
 # Disable zsh-autosuggestions
 #
-source ~/.zsh-autosuggestions/autosuggestions.zsh
-zle-line-init() {
-    zle autosuggest-start
-}
-zle -N zle-line-init
+source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
+#source ~/.zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+#zle-line-init() {
+#    zle autosuggest_start
+#}
+#zle -N zle-line-init
 bindkey '^T' autosuggest-toggle
 
 # man page color 

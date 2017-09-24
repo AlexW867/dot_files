@@ -3,8 +3,9 @@
 [merge]
 	tool = opendiff
 [user]
-	name = AlexW
+	name = Alex Wang
 	email = yen867@gmail.com
+	signingkey = F05609BC
 [push]
 	default = matching
 [core]
