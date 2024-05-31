@@ -14,6 +14,7 @@ PATHDIRS=(
     /usr/sbin
     /sbin
     ~/.poetry/bin
+    ~/.local/bin
 )
 path=($path $PATHDIRS)
 
